@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>5.2.2</Version>
+  <Author>André</Author>
+ </Creator>
+ <Manufacturer>Zavora</Manufacturer>
+ <Model>KP-L88-54</Model>
+ <Type>Dimmer</Type>
+ <Channel Name="CH1 - Dimmer" Preset="IntensityMasterDimmer"/>
+ <Channel Name="CH2 - Vermelho" Preset="IntensityRed"/>
+ <Channel Name="CH3 - Verde" Preset="IntensityGreen"/>
+ <Channel Name="CH4 - Azul" Preset="IntensityBlue"/>
+ <Channel Name="CH5 - Vazio" Preset="NoFunction"/>
+ <Channel Name="CH6 - Efeitos">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="50">1 - Strobo/Dimmer</Capability>
+  <Capability Min="51" Max="100">2 - Salto</Capability>
+  <Capability Min="101" Max="150">3 - Gradiente</Capability>
+  <Capability Min="151" Max="200">4 - Pulso</Capability>
+  <Capability Min="201" Max="255">5 - Modo Som</Capability>
+ </Channel>
+ <Channel Name="CH7 - Velocidade">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">CH7 - Macro presets</Capability>
+ </Channel>
+ <Mode Name="7 Canais">
+  <Channel Number="0">CH1 - Dimmer</Channel>
+  <Channel Number="1">CH2 - Vermelho</Channel>
+  <Channel Number="2">CH3 - Verde</Channel>
+  <Channel Number="3">CH4 - Azul</Channel>
+  <Channel Number="4">CH5 - Vazio</Channel>
+  <Channel Number="5">CH6 - Efeitos</Channel>
+  <Channel Number="6">CH7 - Velocidade</Channel>
+  <Head>
+   <Channel>0</Channel>
+   <Channel>1</Channel>
+   <Channel>2</Channel>
+   <Channel>3</Channel>
+   <Channel>4</Channel>
+   <Channel>5</Channel>
+   <Channel>6</Channel>
+  </Head>
+ </Mode>
+ <Physical>
+  <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="200" Height="200" Depth="5"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="160" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>
